@@ -1,0 +1,6 @@
+*.bam
+*.bed
+
+*.tsv
+
+tmp*
