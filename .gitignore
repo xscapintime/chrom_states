@@ -2,5 +2,6 @@
 *.bed
 
 *.tsv
+*.txt
 
 tmp*
