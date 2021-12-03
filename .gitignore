@@ -3,5 +3,8 @@
 
 *.tsv
 *.txt
+*.png
+*.svg
 
 tmp*
+out/
