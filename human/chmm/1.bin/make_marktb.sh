@@ -1,9 +1,9 @@
-for f in ../../bam2bed/*.bed
+for f in bed/*.bed
 do
 	bn=`basename $f`
-	mk=`echo $bn | cut -d "_" -f 1 | cut -d "-" -f 1`
+	mk=`echo $bn | cut -d "-" -f 1`
 	
-	echo -e H1'\t'$mk'\t'$f >> cellmarkfiletable.txt
+	echo -e H1'\t'$mk'\t'$bn >> cellmarkfiletable.txt
 	
 
 done
