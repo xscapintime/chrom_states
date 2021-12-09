@@ -1,0 +1,8 @@
+#PBS -l nodes=1:ppn=2
+#PBS -q batch
+#PBS -j oe
+#PBS -o ${out}.out
+#PBS -V
+cd $PBS_O_WORKDIR
+
+bedtools bamtobed -i $inp > $out.bed

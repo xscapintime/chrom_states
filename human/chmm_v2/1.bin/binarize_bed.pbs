@@ -1,0 +1,10 @@
+#PBS -l nodes=1:ppn=8
+#PBS -q batch
+#PBS -j oe
+#PBS -N ChromHMM_binarize
+
+cd $PBS_O_WORKDIR
+
+ChromHMM_jar=/home/liyang/data3/tools/chromHMM/ChromHMM-1.23/ChromHMM.jar
+
+java -mx4000M -jar $ChromHMM_jar BinarizeBed ../../../../genome/hg38.chrom.sizes bed/ cellmarkfiletable.txt out/

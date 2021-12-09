@@ -5,8 +5,9 @@
 *.txt
 *.png
 *.svg
+*.html
 
 tmp*
-out/
+out*/
 
 *.o*
