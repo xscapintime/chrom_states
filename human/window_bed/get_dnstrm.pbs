@@ -1,0 +1,14 @@
+#PBS -l nodes=1:ppn=12
+#PBS -q batch
+#PBS -j oe
+#PBS -o ${out}.out
+#PBS -V 
+cd $PBS_O_WORKDIR
+
+	
+# extending sequencing reads by 200 bp in the 3' direction 
+bedtools slop -i $inp -g hg38.chrom.sizes -l 0 -r 200 -s > $out.slop.bed
+
+
+
+
